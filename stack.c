@@ -43,7 +43,7 @@ int pop(Stack *stack) {
         printf("Stack Underflow\n");
         return -1;
     }
-    int popped = stack = stack->arr[stack->top]; //getting the top element
+    int popped = stack->arr[stack->top]; //getting the top element
     stack->top--; //decrement top pointer
     printf("Popped %d from the stack\n", popped);
     return popped; //return popped element
